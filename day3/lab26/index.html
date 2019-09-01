@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <form>
+      <fieldset>
+        <legend>Registration</legend>
+        <label
+          >Username: <input required="true" name="uName" type="text"
+        /></label>
+        <label>Password: <input name="pass" type="password" /> </label>
+      </fieldset>
+      <fieldset>
+        <input type="radio" name="sex" id="male" />
+        <label for="male">Male</label>
+        <input type="radio" name="sex" id="female" />
+        <label for="female">Female</label>
+      </fieldset>
+      <fieldset>
+        <label for="file-select">Upload form:</label>
+        <input type="file" name="upload" id="file-select" />
+      </fieldset>
+      <fieldset>
+        <label for="address">Address:</label>
+        <textarea rows="3" cols="30" name="address" id="address"></textarea>
+        <input type="date" />
+        <input type="email" name="email" />
+        <input type="number" />
+      </fieldset>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

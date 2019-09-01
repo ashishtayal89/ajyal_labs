@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Lets Debugg</p>
+    <script>
+      var globalVar = 5;
+      function parent() {
+        var parentVar = 10;
+        function child() {
+          var childVar = 20;
+          console.log(globalVar + parentVar + childVar);
+        }
+        child();
+      }
+      parent();
+    </script>
+  </body>
+</html>

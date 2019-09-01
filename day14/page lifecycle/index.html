@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Page Lifecycle</h2>
+    <script>
+      function ready(e) {
+        alert(e.type);
+      }
+      document.addEventListener("DOMContentLoaded", ready);
+      window.addEventListener("load", ready);
+      window.onbeforeunload = function(e) {
+        debugger;
+        return false;
+      };
+
+      //   function beforeunload(event) {
+      //     event.returnValue = `Are you sure you want to leave?`;
+      //   }
+
+      //   document.addEventListener("DOMContentLoaded", ready);
+      //   window.addEventListener("load", ready);
+      //   window.onbeforeunload = function(e) {
+      //     debugger;
+      //     e.preventDefault();
+      //     return false;
+      //   };
+      //   window.addEventListener("unload", ready);
+    </script>
+  </body>
+</html>

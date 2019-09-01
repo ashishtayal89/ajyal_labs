@@ -1,0 +1,27 @@
+<html>
+  <body>
+    <script>
+      setTimeout(function() {
+        console.log(1);
+        setTimeout(function() {
+          console.log(2);
+          setTimeout(function() {
+            console.log(3);
+            setTimeout(function() {
+              console.log(4);
+              setTimeout(function() {
+                console.log(5);
+              });
+            });
+          });
+        });
+      });
+
+      //   var resolved = new Promise(function(resolve, reject) {
+      //     setTimeout(resolve);
+      //   }).then(function(){
+      //       setTimeout
+      //   });
+    </script>
+  </body>
+</html>

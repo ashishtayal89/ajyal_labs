@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Flex Box example</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .std1 {
+        height: 30px;
+        width: 350px;
+        border: 1px solid black;
+        background-color: lightblue;
+      }
+      .std2 {
+        height: 30px;
+        width: 50px;
+        border: none;
+        background-color: lightblue;
+      }
+      section {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: stretch;
+      }
+      /* Put a border around the children*/
+      section > * {
+        border: 1px solid black;
+        margin: 0;
+      }
+      .i1 {
+        flex: 1 3 350px;
+      }
+      /* Not needed, this is the default for images */
+      .i2 {
+        flex: none;
+      }
+      .i3 {
+        height: 75px;
+        background-color: lightyellow;
+        flex: 2 0 50px;
+      }
+      .i4 {
+        flex: 3 1 auto;
+      }
+      div.mydiv {
+        height: 500px;
+        width: 500px;
+        border: 1px solid grey;
+        display: flex;
+      }
+      div.myinnerdiv {
+        height: 100px;
+        width: 100px;
+        background: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="std1"></div>
+    <section>
+      <p class="i1">HTML CSS Flexbox</p>
+      <img
+        class="i2"
+        src="data:image/png;base64,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"
+        alt="image"
+      />
+      <div class="i3">
+        <div class="std2"></div>
+      </div>
+      <p class="i4">HTML CSS Flexbox</p>
+    </section>
+    <div class="mydiv">
+      <div class="myinnerdiv"></div>
+    </div>
+  </body>
+</html>

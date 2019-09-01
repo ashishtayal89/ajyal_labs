@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <!-- <form onsubmit="return register(this)">
+      <input type="text" id="name" />
+      <input type="text" id="age" />
+      <input type="submit" />
+    </form> -->
+    <!-- <form action="/">
+      <input type="text" id="name" />
+      <input type="text" id="age" />
+      <input type="submit" onclick="console.log();" />
+    </form> -->
+    <form action="/">
+      <input type="text" id="name" />
+      <input type="text" id="age" />
+      <input type="submit" id="submit" />
+    </form>
+    <script>
+      function register(e) {
+        debugger;
+        return false;
+        // console.log(e);
+      }
+      document.getElementById("submit").onclick = register;
+      //   document.getElementById("submit").addEventListener("click",register);
+    </script>
+  </body>
+</html>

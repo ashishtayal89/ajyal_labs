@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Shifting Array Elements</h2>
+    <p id="DigitalE11"></p>
+    <script>
+      var Courses = ["HTML", " CSS", " JavaScript", "Java"];
+      document.getElementById("DigitalE11").innerHTML =
+        "Original courses were: " +
+        Courses +
+        "<br>" +
+        "Courses remained were: " +
+        Courses.shift();
+      var updatedCourse = Courses.unshift("C", " C++ ");
+      document.getElementById("DigitalE11").innerHTML = Courses;
+    </script>
+  </body>
+</html>

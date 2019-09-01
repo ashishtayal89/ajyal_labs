@@ -1,0 +1,29 @@
+1. Function Hoisting
+var a = 10;
+function a(){}
+console.log(a); // 10;
+
+2. Variable Hoisting
+console.log(a); // undefined
+var a = 10;
+
+3. Hoisting + Scope
+var a = 10;
+function a(){
+    console.log(a); // undefined
+    var a = 20;
+    console.log(a); // 20
+}
+console.log(a); // 10
+
+4. Context
+
+function a(){
+    console.log(this); // window
+    function b(){
+        console.log(this); // window
+    }
+    b();
+}
+a();
+
